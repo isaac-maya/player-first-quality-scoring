@@ -1,6 +1,17 @@
 # EA FC Quality + Data Strategy Pack
 
+🌐 **Live demo:** _coming soon — deploys to Hugging Face Spaces in Wave 3 rollout_
+
 A compact player-first quality artifact for EA Sports FC-adjacent QA, analytics, and player-experience roles. Uses synthetic defects and telemetry to show how trust impact, breadth, and recovery cost can drive a release-window decision — not pretending to simulate game systems, but speaking the language of how FC quality conversations actually move.
+
+## Run
+
+**Interactive (Streamlit) — recommended:**
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+Tune the 4 priority factors with sliders. Watch the release decision change live. Load any of the 10 sample defects into the sliders to see why it scored that way.
 
 ## What It Demonstrates In 30 Seconds
 
@@ -9,13 +20,11 @@ A compact player-first quality artifact for EA Sports FC-adjacent QA, analytics,
 - Trust damage and session abandonment lead the prioritization; raw frequency does not get to dominate.
 - The taxonomy, the strategy, and the scorer are aligned — the same five categories show up across all three files.
 
-## Run
-
+**CLI batch run:**
 ```bash
 python3 fc_quality_scorer.py
 ```
-
-The command refreshes `fc_priority_report.md` from the synthetic defect set.
+Refreshes `fc_priority_report.md` from the synthetic defect set.
 
 ## Contents
 
